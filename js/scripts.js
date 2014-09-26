@@ -39,6 +39,22 @@ $('.date-picker').datepicker({
     autoclose: true
 });
 
+$( "#avail" ).click(function() {
+		$(".reservate").toggleClass('active');
+});
+
+$( ".reservate input" ).blur(function() {
+		if( !$(this).val() ) {
+	  		$(this).removeClass('solid');
+	        
+	    } else {
+		    $(this).addClass('solid');
+	    }
+});
+
+$( "input[type='text']" ).change(function() {
+ 	 $(this).addClass('solid');
+});
 
 
 var cbpAnimatedHeader = (function() {
