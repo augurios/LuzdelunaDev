@@ -1,0 +1,436 @@
+/*!
+ *By Augusto
+ */
+
+/* Global Styles */
+
+body {
+    /* padding-top: 7em; */ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "hypatia-sans-pro",sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 72px;
+}
+
+.navbar.navbar-fixed-top {
+    background-color: #4C9CB7;
+    margin-bottom: 0;
+    height: 7.5em;
+    padding-top: 1.5em;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+}
+
+.navbar.navbar-fixed-top.navbar-shrink {
+    height: 3.125em;
+    padding-top: 0;
+}
+
+.navbar-brand  {
+    min-width: 325px;
+    vertical-align: middle;
+    color: #fff !important;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    height: auto;
+}
+
+.navbar-brand:hover {
+    color:#FFF;
+}
+
+.navbar-brand strong {
+    display: block;
+    margin-top: .5em;
+    font-size: 2em;
+    line-height: 1.2;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.navbar-shrink .navbar-brand strong {
+    margin-top: 0.56em;
+    font-size: 1.3em;
+}
+
+.navbar-brand span {
+    display: block;
+    opacity:1;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.navbar-shrink .navbar-brand span {
+    opacity: 0;
+}
+
+.navbar-brand img {
+    width: 6em;
+    float: left;
+    margin-right: 0.8em;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    /* margin-left: -10px; */
+}
+
+.navbar-shrink .navbar-brand img {
+    width: 3.125em;
+    margin-right: 0.2em;
+}
+
+.navbar-nav>li>a {
+    padding: 2.3em 1em 2.2em;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; 
+    color: #FFFF63;
+    text-transform: uppercase;
+    font-family: "hypatia-sans-pro",sans-serif;
+    line-height: 24px;
+}
+
+.nav>li>a:focus {
+    background-color: transparent;
+}
+
+.nav>li>a:hover, 
+.nav>li.active>a {
+    background-color: #FF8539;
+}
+
+
+.navbar-shrink .navbar-nav>li>a {
+    padding: 0.8em 1em;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* lang picker */
+
+.lang-picker-wrap {
+    background-color: #2A86A5;
+    position: absolute;
+    width:100%;
+    top: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.navbar-shrink .lang-picker-wrap{
+    top: -1.5em;
+}
+
+.lang-picker {
+    height: 1.5em;
+}
+
+.lang-picker .btn {
+    height: 100%;
+    padding: 0 5px;
+    border-radius: 0;
+    background-color: transparent;
+    border: 0;
+    float: right;
+    color: #FFFF63;
+    outline: 0 !important;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.open.lang-picker .btn {
+    background-color: #4C9CB7;
+}
+
+.lang-picker .dropdown-menu {
+    background-color: #4C9CB7;
+    color: #FFFF63;
+    float: right;
+    left: auto;
+    right: 14px;
+    top: 92%;
+    padding: 11px 0;
+    border-radius: 0;
+    border-top: 0;
+    border-color: #2A86A5;
+    outline: 0 !important;
+}
+
+.lang-picker .dropdown-menu li {
+    padding: 0 15px;
+}
+
+.lang-picker .dropdown-menu li:hover {
+    background-color: #FF9F63;
+    color: #4C9CB7;
+    cursor: pointer;
+}
+
+.lang-picker .btn:hover {
+    color: #FF8539;
+}
+
+.lang-picker .btn img {
+    margin-top: -3px;
+    display: inline-block;
+}
+/* reservate drawer */
+
+.reservate {
+    margin-right: 23px;
+}
+
+#avail {
+    width: 100%;
+    height: 100%;
+    padding: .5em .5em .5em;
+    border: 0;
+    line-height: 24px;
+    font-family: "hypatia-sans-pro",sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 1.8em .5em 0;
+    background-color: #FF9F63;
+    color: #034961;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    outline: 0;
+}
+
+#avail:hover {
+    background-color: #06799F;
+    color: #FF8539;
+}
+
+.navbar-shrink #avail {
+    margin-top: 5px;
+}
+
+.reservate .form-horizontal {
+    position: absolute;
+    /* left: -9000px; */
+    width: 1024px;
+    right: -8px;
+    top: 120px;
+    background-color: rgba(76,156,183,0.8);
+    padding: 1.5em 1.5em 24px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+    
+}
+
+.reservate fieldset {
+    margin: 0 -15px;
+}
+
+.reservate .control-group {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    position: relative;
+    /* margin-bottom: 24px; */
+}
+
+.reservate .help-block {
+    display: none;
+}
+
+.reservate legend {
+    width: 100%;
+    margin: 0 0 22px;
+    padding: 0 15px;
+    border: 0;
+    color: #FFFF63;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: "hypatia-sans-pro",sans-serif;
+    text-transform: uppercase;
+    display: none;
+}
+
+.reservate legend:after {
+    content:"";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #FFFF63;
+}
+
+.reservate .control-label {
+    position: absolute;
+    z-index: 0;
+    padding: 12px 5px;
+    background-color: #2A86A5;
+    color: #fff;
+    display: block;
+    width: 88%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.reservate input[type=text] {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+    border: 0;
+    line-height: 24px;
+}
+
+.reservate select {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 12px 15px;
+    border: 0;
+    line-height: 24px;
+    
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.reservate .btn {
+    width: 100%;
+    padding: 12px 24px;
+    border: 0;
+    line-height: 24px;
+    font-family: "hypatia-sans-pro",sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    background-color: #FF9F63;
+    color: #034961;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    outline: 0;
+}
+
+.reservate .btn:hover {
+    background-color: #06799F;
+    color: #FF8539;
+}
+
+/* Home Page Hero */
+
+.hero {
+    height: 48em;
+    background-image: url(https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10157338_805198069503859_8563682435959008740_n.jpg?oh=e99d8e9e0c8c67367c95a8bb8809aba4&oe=54909C64&__gda__=1418552590_e8a2fb92a8f176a80df1858e5f68d40c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 7em;
+}
+
+.intro-text {
+
+}
+
+.intro-text h2 {
+    margin:0;
+}
+
+.places {
+    
+}
+
+.place-image {
+    height:400px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.place-text {
+    height:400px;
+}
+
+.cafe {
+    background-image: url(../image/logobonito.png);
+}
+
+.restaurant {
+    background-image: url(../image/luna-roja-logob.png);
+}
+
+.quotes-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.quotes-section .carousel-indicators {
+  	bottom: -30px;
+}
+
+.quotes-section .carousel-indicators > li {
+    background-color: #e84a64;
+    border: none;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
