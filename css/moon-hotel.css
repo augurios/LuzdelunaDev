@@ -5,10 +5,11 @@
 /* Global Styles */
 
 body {
-    /* padding-top: 7em; */ /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
     position: relative;
+    color: #666;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,8 +22,34 @@ h1 {
     line-height: 72px;
 }
 
+.cta-btn {
+    padding: 12px 24px;
+    border: 0;
+    line-height: 24px;
+    font-family: "hypatia-sans-pro",sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    background-color: #FF9F63;
+    color: #034961;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    outline: 0;
+}
+
+
+.cta-btn:hover {
+    background-color: #06799F;
+    color: #FF8539;
+}
+
 .navbar.navbar-fixed-top {
-    background-color: #4C9CB7;
+    background-color: rgba(76,156,183,0.7);
     margin-bottom: 0;
     height: 7.5em;
     padding-top: 1.5em;
@@ -33,13 +60,14 @@ h1 {
     transition: all 0.2s ease;
     -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
-    border-bottom: 2px solid #FF8539;
+    border-bottom: 2px solid rgba(255,133,57,0.7);
 }
 
 .navbar.navbar-fixed-top.navbar-shrink {
     height: 3.125em;
     padding-top: 0;
     border-bottom: 0;
+    background-color: #4C9CB7;
 }
 
 .navbar-brand  {
@@ -149,7 +177,7 @@ h1 {
     transition: all 0.2s ease;
 }
 
-.navbar-shrink .lang-picker-wrap{
+.navbar-shrink .lang-picker-wrap {
     top: -1.5em;
 }
 
@@ -257,7 +285,7 @@ h1 {
     background-color: rgba(76,156,183,0.8);
     padding: 1.5em 1.5em 24px;
     border-radius: 4px;
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.2);
     opacity: 0;
     -webkit-transition: top 1s ease, opacity 0.2s ease;
     -moz-transition: top 1s ease, opacity 0.2s ease;
@@ -277,6 +305,11 @@ h1 {
     transition: opacity 0.2s ease;
 }
 
+.navbar-shrink .reservate.active .form-horizontal {
+     top: 72px;
+     background-color: #4C9CB7;
+     /* border: 1px solid #045D7B; */
+}
 
 .reservate fieldset {
     margin: 0 -15px;
@@ -447,16 +480,17 @@ h1 {
     position: relative;
     overflow: hidden;
     margin-bottom: 72px;
+    padding-bottom: 24px;
 }
 
 .section-header h2 {
-    margin: 48px 0 22px;
+    margin: 48px 0 12px;
     font-size: 54px;
     line-height: 72px;
     text-transform: uppercase;
     color: #fff;
     
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
 }
 
 .section-header h2:before {
@@ -472,24 +506,90 @@ h1 {
     margin-left: -215px;
 }
 
+.section-header p {
+    color: #fff;
+    margin-bottom: 34px;
+    font-family: "learning-curve",cursive;
+    font-size: 36px;
+}
+
 #about .lead {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 24px;
+    padding: 48px;
+    background-color: rgba(4,93,123,0.9);
+    margin: 0 10%;
+    color: #FFFF63;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.places {
-    
+#about .lead:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #FFFFCC;
+    width: 430px;
+    height: 430px;
+    border-radius: 360px;
+    top: -479px;
+    left: 50%;
+    margin-left: -215px;
 }
 
-.place-image {
-    height:400px;
+.about-section .panel {
+    background-color: #4C9CB7;
+    color: #fff;
+    border: 1px solid #06799F;
+    margin-bottom: 71px;
+}
+
+.about-section .panel-default>.panel-heading {
+    background-color: #2A86A5;
+    color: #fff;
+    border-color: #06799F;
+    text-transform: uppercase;
+    padding: 22px 24px 23px;
+}
+
+.about-section .panel-default>.panel-heading h4 {
+    margin: 0;
+    line-height: 24px;
+    color: #FFFF63;
+}
+
+.about-section .panel-default>.panel-heading h4 i {
+    color: #FF9F63;
+    font-size: 24px;
+}
+
+.about-section .panel-body {
+    padding: 24px;
+    font-weight: 300;
+}
+
+.about-section .panel-body p {
+    margin-bottom: 24px;
+}
+
+.bio-note {
+    padding: 120px 0 96px;
+    background-image: url(https://scontent-b-mia.xx.fbcdn.net/hphotos-xpa1/v/l/t1.0-9/1459720_674100385946962_1795828321_n.jpg?oh=bdb0ca57a3702d3fbc8c01c556e45e3b&oe=54B95815);
     background-size: cover;
-    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
 }
 
-.place-text {
-    height:400px;
+.bio-note .cta-btn {
+    display: block;
+    max-width: 300px;
+    margin: 12px auto 0px;
+}
+
+.areas-section .section-header {
+    margin-bottom: 0;
 }
 
 .cafe {
