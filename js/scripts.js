@@ -9,6 +9,20 @@ $(function() {
     });
 });
 
+$( ".nav-trigger" ).click(function() {
+	$(this).next('.nav-accc').toggleClass('active');
+	$(this).toggleClass('active');
+});
+
+$( window ).scroll(function() {
+  $( ".nav-trigger" ).removeClass('active');
+  $('.nav-accc').removeClass('active');
+});
+
+
+$( window ).load(function() {
+   $('body').addClass('loaded');
+});
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({

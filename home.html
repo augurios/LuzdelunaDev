@@ -10,7 +10,6 @@
     <meta name="author" content="">
 
     <title>Luz De Luna | Hotel • Boutique</title>
-	<link rel="stylesheet" href="/http://basehold.it/24">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +38,9 @@
     <div class="lang-picker-wrap">
     	<div class="container">
     		<div class="row">
+    			
 	            <div class="lang-picker dropdown col-lg-12">
+	            	<!-- <p><i class="fa fa-phone"></i> (506) 22254919 </p> -->
 				  <button class="btn" data-toggle="dropdown">English <img src="image/en-icn.png" alt="en-icn" width="24" ></button>
 					  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 					    <li>English <img src="image/en-icn.png" alt="en-icn" width="24" ></li>
@@ -54,34 +55,35 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                
                 <a class="navbar-brand tk-hypatia-sans-pro" href="#page-top"><img src="image/logo-icon.svg" alt="logo" /><strong>LUZ DE LUNA</strong><span>Hotel &bull; Boutique</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="">
                 <ul class="nav navbar-nav navbar-right">
                 	<li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#areas">Complex</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#rooms">Rooms</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                    <li>
+                    	<button name="submit" class="nav-trigger hidden"><i class="fa fa-bars"></i>
+                    	<i class="fa fa-times"></i></button>
+                    	<ul class="nav-accc">
+		                    <li class="page-scroll">
+		                        <a href="#about">About</a>
+		                    </li>
+		                    <li class="page-scroll">
+		                        <a href="#areas">Complex</a>
+		                    </li>
+		                    <li class="page-scroll">
+		                        <a href="#rooms">Rooms</a>
+		                    </li>
+		                    <li class="page-scroll">
+		                        <a href="#contact">Contact</a>
+		                    </li>
+                    	</ul>
                     </li>
                     <li class="reservate">            
-			            <button id="avail" name="submit" class="btn btn-primary">Book</button>
+			            <button id="avail" name="submit" class="btn btn-primary"><i class="fa fa-book hidden"></i> <span>Book Now</span></button>
 			            <form class="form-horizontal">
 						<fieldset>
 						
@@ -147,7 +149,7 @@
 			    <h2>The Eco Feeling at the heart of the city</h2>
 			    <p class="tk-learning-curve">Eco-concious Hotel San Jose, Costa Rica</p>
 		    </div>
-		    <div class="page-scroll"><a href="#about" class="fa fa-arrow-circle-down"></a></div>
+		    <div class="page-scroll"><a href="#about" class="fa fa-arrow-circle-down animated infinite pulse"></a></div>
     	</div>
     </div>
 
@@ -177,7 +179,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn cta-btn">Learn More</a>
+                        <a href="#aboutMore1" class="btn cta-btn" data-toggle="modal">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -188,18 +190,18 @@
                     </div>
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn cta-btn">Learn More</a>
+                        <a href="#aboutMore2" class="btn cta-btn" data-toggle="modal">Learn More</a>
                     </div>
                 </div>
             </div>
 		            <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="background-image:url(image/art-badge.png)">
-                        <h4><i class="fa fa-fw fa-pencil"></i> Artistic</h4>
+                        <h4><i class="fa fa-fw fa-paint-brush"></i> Artistic</h4>
                     </div>
                     <div class="panel-body">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn cta-btn">Learn More</a>
+                        <a href="#aboutMore3" class="btn cta-btn" data-toggle="modal">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -217,7 +219,7 @@
 			                	
 			                	neocolonial de calle 33, denominándola desde entonces como <strong>Calle La Luz.</strong>
 			                	
-			                	<a href="#" class="btn cta-btn">Read full story</a>
+			                	<a href="#fullStory" class="btn cta-btn" data-toggle="modal">Read full story</a>
 			                	
 			                	</p>
 						</div>
@@ -247,10 +249,10 @@
 	                <div class="col-lg-6 col-sm-6">
 	                   
 	                    <h2 class="section-heading">Enjoy a delicious coffee<br>on the moon!</h2>
-	                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+	                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! 10% discount to our guest.</p>
 						<a href="#" class="btn cta-btn">Take a look at our Cafe</a>
 	                </div>
-	                <div class="col-lg-6 col-sm-6">
+	                <div class="col-lg-6 col-sm-6 bg-img" style="background-image:url(https://scontent-a-mia.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10356137_830811903609142_5601425211049058838_n.jpg?oh=d1d13c97ddea4dd701116b5f97b4d0b1&oe=548CBBCB)">
 	                    <img class="img-responsive" src="https://scontent-a-mia.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10356137_830811903609142_5601425211049058838_n.jpg?oh=d1d13c97ddea4dd701116b5f97b4d0b1&oe=548CBBCB" alt="">
 	                </div>
             </div>
@@ -262,11 +264,11 @@
 	                <div class="col-lg-6 col-sm-push-6  col-sm-6">
 	                    
 	                    <h2 class="section-heading">A rediscovered cuisine <br>by Our expert chef</h2>
-	                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus!</p>
+	                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae 10% discount to our guest!</p>
 	                    
 	                    <a href="#" class="btn cta-btn">More about our Restaurant</a>
 	                </div>
-	                <div class="col-lg-6 col-sm-pull-6  col-sm-6">
+	                <div class="col-lg-6 col-sm-pull-6  col-sm-6 bg-img" style="background-image:url(https://scontent-b-mia.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10660379_830812046942461_6239192724639648801_n.jpg?oh=aee8a067647356ae596e53a2cad9ce30&oe=548A0CC6)">
 	                    <img class="img-responsive" src="https://scontent-b-mia.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10660379_830812046942461_6239192724639648801_n.jpg?oh=aee8a067647356ae596e53a2cad9ce30&oe=548A0CC6" alt="">
 	                </div>
             </div>
@@ -337,89 +339,174 @@
     	</div>
         <div class="container">
         	<div class="row">
-            <div class="col-lg-12">
+            	<div class="col-lg-12">
             	 <!-- Room One -->
-			        <div class="row">
-			            <div class="col-md-6">
+			        <div class="row room-item">
+			            <div class="col-md-6 bg-img" style="background-image:url(https://scontent-b-mia.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/533676_475784329111903_691025651_n.jpg?oh=b96637da47c93d383e24b165c15e2211&oe=548F82ED)">
 			                <a href="#">
-			                    <img class="img-responsive" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/255401_475784089111927_1747863603_n.jpg?oh=2c9f3e546b806704c9528677c6689212&oe=54CEBCF3&__gda__=1422376482_e142a9d316bb97e0e444d0bfcea7e50e" alt="">
+			                    <img class="img-responsive" src="https://scontent-b-mia.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/533676_475784329111903_691025651_n.jpg?oh=b96637da47c93d383e24b165c15e2211&oe=548F82ED" alt="">
 			                </a>
 			            </div>
-			            <div class="col-md-6 room-item">
+			            <div class="col-md-6">
 			                <h2>Standard Rooms</h2>
-							<h3>For the budget travelers</h3>
+							<h3>For travelers on a budget</h3>
 			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
 			                <div class="room-includes">
-			                	<i class="fa fa-users"></i>
-			                	<i class="fa fa-wifi"></i>
-			                	<i class="fa fa-bus"></i>
+			                	<span><i class="fa fa-users"></i>
+			                		<br />2-3 People
+			                	</span>
+			                	<span><i class="fa fa-wifi"></i>
+			                		<br />WI-FI
+			                	</span>
+			                	<span><i class="fa fa-desktop"></i></i>
+			                		<br />Cable TV
+			                	</span>
+			                	
+			                	
+			                	
 			                </div>
-			                <a class="btn cta-btn" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+			                <a class="btn cta-btn" href="#">Rooms Galery <span class="glyphicon glyphicon-chevron-right"></span></a>
 			                
 			            </div>
 			        </div>
 			        <!-- /.row -->
 			
-			        <hr>
+			       
 			
 			        <!-- Room Two -->
-			        <div class="row">
-			            <div class="col-md-6">
+			        <div class="row room-item">
+			            <div class="col-md-6 bg-img" style="background-image:url(https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/p417x417/75622_475783905778612_454942933_n.jpg?oh=08bad621ac4e516828cdf46d9a12b92e&oe=54C72BF2&__gda__=1418223420_4ee141d59bef0fbd57ce1516585047f2)">
 			                <a href="#">
 			                    <img class="img-responsive" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/p417x417/75622_475783905778612_454942933_n.jpg?oh=08bad621ac4e516828cdf46d9a12b92e&oe=54C72BF2&__gda__=1418223420_4ee141d59bef0fbd57ce1516585047f2" alt="">
 			                </a>
 			            </div>
-			            <div class="col-md-6 room-item">
-			                <h3>Habitaciones dobles o triples</h3>
-			                <h4>Subheading</h4>
-			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-			                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+			            <div class="col-md-6">
+			                <h2>Superior Rooms</h2>
+							<h3>For travelers on a budget</h3>
+			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+			                <div class="room-includes">
+			                	<span><i class="fa fa-users"></i>
+			                		<br />2-3 People
+			                	</span>
+			                	<span><i class="fa fa-wifi"></i>
+			                		<br />WI-FI
+			                	</span>
+			                	<span><i class="fa fa-desktop"></i></i>
+			                		<br />Cable TV
+			                	</span>
+			                	
+			                	
+			                	
+			                </div>
+			                <a class="btn cta-btn" href="#">Rooms Galery <span class="glyphicon glyphicon-chevron-right"></span></a>
 			            </div>
 			        </div>
 			        <!-- /.row -->
 			
-			        <hr>
+			        
 			
 			        <!-- Room Three -->
-			        <div class="row">
-			            <div class="col-md-6 room-item">
+			        <div class="row room-item">
+			            <div class="col-md-6 bg-img" style="background-image:url(https://scontent-b-mia.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/533676_475784329111903_691025651_n.jpg?oh=b96637da47c93d383e24b165c15e2211&oe=548F82ED)">
 			                <a href="#">
 			                    <img class="img-responsive" src="https://scontent-b-mia.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/533676_475784329111903_691025651_n.jpg?oh=b96637da47c93d383e24b165c15e2211&oe=548F82ED" alt="">
 			                </a>
 			            </div>
-			            <div class="col-md-6 room-item">
-			                <h3>Project Three</h3>
-			                <h4>Subheading</h4>
-			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-			                <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+			            <div class="col-md-6">
+			                <h2>Suite Rooms</h2>
+							<h3>For travelers on a budget</h3>
+			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+			                <div class="room-includes">
+			                	<span><i class="fa fa-users"></i>
+			                		<br />2-3 People
+			                	</span>
+			                	<span><i class="fa fa-wifi"></i>
+			                		<br />WI-FI
+			                	</span>
+			                	<span><i class="fa fa-desktop"></i></i>
+			                		<br />Cable TV
+			                	</span>
+			                	
+			                	
+			                	
+			                </div>
+			                <a class="btn cta-btn" href="#">Rooms Galery <span class="glyphicon glyphicon-chevron-right"></span></a>
 			            </div>
 			        </div>
 			        <!-- /.row -->
 			
-			        <hr>
+			        
             </div>
-                
+            </div>
         </div>
+        <div class="included-services">
+        	<div class="container">
+        		<div class="row">
+	        		<div class="col-md-6">
+		        		<h2>Included services</h2>
+		        		<p>With your stay the following services are included</p>
+		        		<div class="room-includes">
+			                	<span><i class="fa fa-users"></i>
+			                		<br />2-3 People
+			                	</span>
+			                	<span><i class="fa fa-wifi"></i>
+			                		<br />WI-FI
+			                	</span>
+			                	<span><i class="fa fa-desktop"></i></i>
+			                		<br />Cable TV
+			                	</span>
+			                	<span><i class="fa fa-users"></i>
+			                		<br />2-3 People
+			                	</span>
+			                	<span><i class="fa fa-wifi"></i>
+			                		<br />WI-FI
+			                	</span>
+			                	<span><i class="fa fa-desktop"></i></i>
+			                		<br />Cable TV
+			                	</span>
+			             </div>
+	        		</div>
+	        		<div class="col-md-6">
+		        		<h2>Lorem ipsum dolor</h2>
+		        		
+		        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        		
+		        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+	        		</div>
+        	</div>
+        	</div>
         </div>
+        
    	</section>
 	
 	<!-- ====== Contact Section ======== -->
 
     <section id="contact" class="contact-section">
+    <div class="section-header">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-lg-12">
+	    				<h2>Contact Us</h2>
+		                <p>We are happy to help you 24-7</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
+            
             <div class="row">
             	<div class="col-md-5">
-            		<h3>-Barrio Escalante-San José, Costa Rica. De Baglmen´s 150 Norte frente a Intensa</h3>
-            		<p>Calle 33 entre avenidas 3 y 5
+            		<h3>Barrio Escalante, San José, Costa Rica. De Baglmen´s 150 Norte frente a Intensa</h3>
+            		<p>
+	            		<i class="fa fa-phone"></i> +(506) 22254919 <br />
+	            		<i class="fa fa-phone"></i> +(506) 22808609 <br />
+            		    Calle 33 entre avenidas 3 y 5 <br />
 10101 San José, Costa Rica</p>
+						<p><i class="fa fa-cc-visa"></i> <i class="fa fa-cc-mastercard"></i> <i class="fa fa-cc"></i> <i class="fa fa-cc-amex"></i> <i class="fa fa-cc-discover"></i></p>
+					<button  name="submit" class="btn cta-btn">Check Availability</button>
             	</div>
                 <div class="col-md-7">
+                	<h2>General Inquiries</h2>
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
@@ -445,11 +532,14 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn cta-btn">Send Message</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12"><small>Design by </small><a href="http://spinaestudio.com" target="_blank">SpinaEstudio.com</a></div>
             </div>
         </div>
     </section>
@@ -460,6 +550,107 @@
 
     </div>
     <!-- /.page-content -->
+    
+    <!-- page modals -->
+    
+    <div class="page-modal modal fade" id="aboutMore1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+        	<div class="brand-modal"><img src="image/logo-icon.svg" alt="logo" /></div>
+            <div class="close-modal" data-dismiss="modal">
+               <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="clearfix"></div>
+            <div class="container ">
+                <div class="row">
+                	<div class="col-md-8 col-md-offset-2">
+                		<h1>A new conscious for environment and travel </h1>
+                	</div>
+                	<div class="col-md-8 col-md-offset-2">
+                		<p class="lead">Estructura creada bajo un concepto ecológico en pro de la naturaleza, mismo que se muestra
+
+en aspectos como: Iluminación, Ventilación natural, sistema de agua caliente por medio 
+
+de paneles solares, entre otros. Además todo el concepto operativo del Hotel va ligado en 
+
+prácticas ambientales y de ahorro a la energía. Además es importante destacar que el Hotel 
+
+apoya el producto nacional y típico de la región. Con la utilización de proveedores nacionales, 
+
+generando apoyo a la economía nacional.</p><img src="image/eco-badge.png" alt="eco-badge" class="img-responsive pull-right">
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                	
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                	
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="page-modal modal fade" id="fullStory" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+        	<div class="brand-modal"><img src="image/logo-icon.svg" alt="logo" /></div>
+            <div class="close-modal" data-dismiss="modal">
+               <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="clearfix"></div>
+            <div class="container ">
+                <div class="row">
+                	<div class="col-md-8 col-md-offset-2">
+                		<h1>Hotel Boutique Luz de Luna-</h1>
+                	</div>
+                	<div class="col-md-8 col-md-offset-2">
+                		<p class="lead">Hotel Boutique Luz de Luna- Dat Tajeb se encuentra ubicado en el “Paseo Gastronómico 
+
+la Luz” de Barrio Escalante (calle 33 entre avenidas 3 y 5) y recibe su nombre debido a que 
+
+en 1884 se logra inaugurar el servicio eléctrico en San José, llegando el mismo hasta la villa 
+
+neocolonial de calle 33, denominándola desde entonces como Calle La Luz.</p><img src="image/bio-img.jpg" alt="eco-badge" class="img-responsive pull-left">
+	                	<p>Reseña histórica
+
+que sirvió para dar nombre al hotel y a la vez rendir homenaje a las culturas precolombinas, 
+
+de ahí que se emplear el nombre “Dat Tebej”, que significa Luz de Luna en Brunca, lenguaje 
+
+nativo del grupo indígena Boruca originario de la zona sur de Costa Rica, mismo que sirve 
+
+de inspiración para colocar en las habitaciones diseños relacionados con las estilizaciones 
+
+precolombinas de animales como el mono, la tortuga, la iguana, la serpiente emplumada, el 
+
+búho entre otros.</p>
+	                	
+	                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                	
+	                	<p>Hoy día el Paseo Gastronómico la luz es una zona caracterizada por sus galerías de arte,
+
+actividades culturales, bares (“Pubs”), restaurantes con una amplia oferta gastronómica 
+
+y justo a tan solo 10 minutos del centro de la capital, donde se encuentran los principales 
+
+atractivos turísticos, culturales, financieros y empresariales.</p>
+
+					<h2>Infraestructura:</h2>
+					<p>La infraestructura del Hotel consiste en una prestigiosa casa del año 1950. Típica casa del 
+						
+						reconocido y prestigioso Barrio Escalante. En su época es considerado unos de los barrios del 
+						
+						centro de San José, más costos y privilegiado. Hoy en día, las construcciones de la zona son 
+						
+						considerados TESOROS de la arquitectura costarricense. El hotel se preocupa en aprovechar 
+						
+						esos tesoros y mantenerlos para dar una experiencia cálida y acogedora típica de una casa, 
+						
+						en donde los huéspedes puedan sentir el sentimiento y calidez de un hogar con un excelente 
+						
+						servicio, sin dejar de lado nuestras raíces culturales.</p>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
