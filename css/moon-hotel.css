@@ -697,6 +697,7 @@ p {
     text-transform: uppercase;
     padding: 143px 0 0;
     background-position: bottom center;
+    background-size: cover;
 }
 
 .about-section .panel-default>.panel-heading h4 {
